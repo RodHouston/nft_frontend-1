@@ -6,11 +6,7 @@ text-align: center;
 }
 
 .containerTitle {
-  display: flex;
-  justify-content: center;
   padding: 25px 0px;
-  align-items: center;
-
 }
 
 .card{
@@ -42,10 +38,6 @@ text-align: center;
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .searchBar input{
@@ -436,7 +428,7 @@ cursor: pointer;
 #point7:hover ~ .box-contents {
   border: 2px solid rgb(42, 215, 6);
   box-shadow: 0 -15px 50px rgba(0, 0, 0, .8);
-  transform-origin:  bottom;
+  transform-origin: center bottom;
   transform: perspective(1000px) rotateX(-10deg) scale(1.2);
 }
 #point8:hover ~ .box-contents {
@@ -658,7 +650,7 @@ border-radius: 18px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .infoBox3{
-  width: calc(100px*4);
+  width: calc(200px*2);
   height: 100%;
   overflow: hidden;
 }
@@ -666,7 +658,7 @@ border-radius: 18px;
   width: 100px;
   max-height: 100px;
   border-radius: 15px;
-  margin: 0 25px;
+  margin: 0 50px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
   transform: perspective(100px) rotateX(45deg);
   transition: .5s ease;
@@ -701,7 +693,7 @@ cursor: pointer;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100px * 6));
+    transform: translateX(calc(-200px * 4));
   }
 }
 
@@ -736,7 +728,6 @@ cursor: pointer;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
-  cursor: pointer;
 }
 .infoBox{
   width: calc(210px * 10);
@@ -748,7 +739,7 @@ cursor: pointer;
   flex-direction: row;
   width: 100%;
   height: 100%;
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
   /* background-color: red; */
 }
 .infoBoxSlide:hover{
@@ -759,7 +750,7 @@ cursor: pointer;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-210px *17.8));
+    transform: translateX(calc(-210px *12.5));
   }
 }
 
